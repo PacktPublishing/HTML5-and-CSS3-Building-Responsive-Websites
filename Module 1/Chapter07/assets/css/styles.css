@@ -1,0 +1,152 @@
+.startup-header {
+  background: url("../img/banner.jpg") no-repeat center center fixed;
+  background-size: cover; }
+  .startup-header .startup-hero {
+    padding-top: 9.375rem;
+    padding-bottom: 9.375rem; }
+    .startup-header .startup-hero .hero-lead {
+      color: #b3b3b3; }
+  .startup-header .startup-name {
+    max-width: 60px; }
+    .startup-header .startup-name a {
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background: url("../img/logo.svg") no-repeat center left;
+      background-size: auto 90%;
+      opacity: 0.9; }
+  .startup-header .startup-top-bar {
+    padding-top: 1.875rem; }
+    .startup-header .startup-top-bar ul {
+      background-color: transparent; }
+      .startup-header .startup-top-bar ul .button {
+        -webkit-transition: border 300ms ease-out, background-color 300ms ease-out;
+        -moz-transition: border 300ms ease-out, background-color 300ms ease-out;
+        transition: border 300ms ease-out, background-color 300ms ease-out; }
+      .startup-header .startup-top-bar ul .log-in {
+        padding-right: 0; }
+        .startup-header .startup-top-bar ul .log-in > .button {
+          background-color: transparent;
+          border: 2px solid rgba(255, 255, 255, 0.2);
+          color: #fff; }
+          .startup-header .startup-top-bar ul .log-in > .button:hover {
+            background-color: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            color: #fff; }
+      .startup-header .startup-top-bar ul .sign-up > .button {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 2px solid transparent;
+        color: #fff; }
+        .startup-header .startup-top-bar ul .sign-up > .button:hover {
+          background-color: rgba(255, 255, 255, 0.5);
+          border: 2px solid transparent; }
+    .startup-header .startup-top-bar a {
+      -webkit-transition: color 300ms ease-out;
+      -moz-transition: color 300ms ease-out;
+      transition: color 300ms ease-out; }
+  .startup-header .startup-top-bar,
+  .startup-header .startup-hero {
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.startup-features {
+  padding: 5.625rem 0; }
+  .startup-features figure {
+    margin: 0; }
+  .startup-features .columns {
+    margin-bottom: 0.9375rem; }
+
+.startup-testimonial {
+  padding: 5.625rem 0;
+  text-align: center;
+  background-color: #fafafa; }
+  .startup-testimonial blockquote {
+    font-size: 1.5rem; }
+  .startup-testimonial figure {
+    margin-top: 0;
+    margin-bottom: 0; }
+    .startup-testimonial figure .avatar {
+      border-radius: 50%;
+      display: inline-block;
+      width: 64px; }
+  .startup-testimonial figcaption {
+    margin-top: 1.25rem;
+    color: #b3b3b3; }
+
+.startup-pricing {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem; }
+  .startup-pricing .pricing-table {
+    background-color: #fafafa; }
+  .startup-pricing .pricing-basic .title {
+    background-color: #85c1d0; }
+  .startup-pricing .pricing-basic .price {
+    background-color: #e1f0f3; }
+  .startup-pricing .pricing-team .title {
+    background-color: #9489a3; }
+  .startup-pricing .pricing-team .price {
+    background-color: #d5d1db; }
+  .startup-pricing .pricing-enterprise .title {
+    background-color: #d04040; }
+  .startup-pricing .pricing-enterprise .price {
+    background-color: #e9a6a6; }
+
+.startup-footer {
+  text-align: center;
+  padding: 3.75rem 0 1.875rem;
+  background-color: #f2f2f2;
+  border-top: 1px solid #cccccc; }
+  .startup-footer .footer-nav ul {
+    margin-left: 0; }
+  .startup-footer .footer-nav li {
+    display: inline-block;
+    margin: 0 0.625rem; }
+  .startup-footer .footer-nav a {
+    color: #a6a6a6;
+    -webkit-transition: color 300ms ease-out;
+    -moz-transition: color 300ms ease-out;
+    transition: color 300ms ease-out; }
+    .startup-footer .footer-nav a:hover {
+      color: #404040; }
+  .startup-footer .social-nav li a:before {
+    margin-right: 0.3125rem;
+    position: relative;
+    top: 2px; }
+  .startup-footer .social-nav .foundicon-facebook:hover {
+    color: #3b5998; }
+  .startup-footer .social-nav .foundicon-twitter:hover {
+    color: #55acee; }
+  .startup-footer .footer-copyright {
+    margin-top: 1.875rem;
+    color: #cccccc; }
+
+@media only screen {
+  .startup-name a {
+    position: relative;
+    left: 0.9375rem; } }
+@media only screen and (max-width: 40em) {
+  .startup-header .startup-name a {
+    background-size: auto 80%; }
+  .startup-header .startup-top-bar {
+    padding-top: 0.9375rem; }
+    .startup-header .startup-top-bar .top-bar-section {
+      text-align: center; }
+    .startup-header .startup-top-bar .sign-up {
+      padding-top: 0; }
+  .startup-header .startup-hero {
+    text-align: center; }
+
+  .startup-footer .secondary-nav li, .startup-footer .secondary-nav a {
+    display: block; }
+  .startup-footer .secondary-nav a {
+    padding: 0.625rem; } }
+@media only screen and (min-width: 40.063em) {
+  .startup-top-bar .log-in {
+    padding-right: 3px; }
+  .startup-top-bar .sign-up {
+    padding-left: 3px; } }
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .startup-name a {
+    position: relative;
+    left: 0; } }
+
+/*# sourceMappingURL=styles.css.map */

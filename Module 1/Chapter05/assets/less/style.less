@@ -1,0 +1,131 @@
+@path-bootstrap: '../../bower_components/bootstrap/less/';
+
+// Variables
+@import 'var-bootstrap.less';
+@import 'var-jasny.less';
+
+//Mixins
+@import (reference) '@{path-bootstrap}mixins.less';
+
+.heading {
+	color: lighten(#000, 70%);	
+	text-transform: uppercase;
+	font-size: 21px;
+	margin-bottom: 60px;	
+}
+
+// Styles
+.portfolio-topbar {
+	.navbar-toggle {
+		display: block;
+		float: left;
+		margin-left: 15px;
+	}
+}
+
+.portfolio-about,
+.portfolio-display,
+.portfolio-contact,
+.portfolio-footer {
+	text-align: center;
+}
+
+.portfolio-about {
+	.portfolio-name {
+		text-transform: uppercase;
+	}
+	.lead {
+		color: @gray-light;
+	}
+}
+
+.portfolio-display {
+	background-color: darken(#fff, 1%);
+	padding-top: 60px;
+	padding-bottom: 60px;
+	h2 {
+		&:extend(.heading);	
+	}
+	.portfolio-item {
+		margin-bottom: 30px;
+
+	}
+	.portfolio-image {
+		padding: 15px;
+		background-color: #fff;
+		text-align: center;
+		max-width: 400px;
+		margin-right: auto;
+		margin-left: auto;
+		.transition(box-shadow 1s);
+		&:hover {
+			.box-shadow(0 0 8px fade(#000, 10%));
+		}
+	}
+	.portfolio-caption {
+		font-weight: 500;
+		margin-top: 15px;
+		color: @gray;
+	}
+}
+
+.portfolio-contact {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	h2 {
+		&:extend(.heading);
+	}
+	.form {
+		width: 100%;
+		max-width: 600px;
+		margin-right: auto;
+		margin-left: auto;
+		input,
+		textarea,
+		button {
+			box-shadow: none;
+			border-radius: @border-radius-small;
+		}
+		.btn {
+			display: block;
+			width: 100%;
+			.transition(background-color 500ms);
+		}
+	}
+}
+
+.portfolio-footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	.social {
+		margin-bottom: 30px;
+		ul {
+			padding-left: 0;
+		}
+		li {
+			list-style: none;
+			display: inline-block;
+			margin: 0 15px;
+		}
+		a {
+			font-weight: 600;
+			color: @gray;
+			text-decoration: none;
+			.transition(color 500ms);
+			&:before {
+				display: block;
+				font-size: 32px;
+				margin-bottom: 5px;
+			}
+		}
+		.twitter a:hover {
+			color: #55acee;
+		}
+		.dribbble a:hover {
+			color: #ea4c89;
+		}
+	}
+	.copyright {
+		color: @gray-light;
+	}
+}

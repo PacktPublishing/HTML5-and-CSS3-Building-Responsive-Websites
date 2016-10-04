@@ -1,0 +1,33 @@
+{
+  "name": "responsive-portfolio",
+  "version": "1.0.0",
+  "homepage": "https://github.com/tfirdaus/rwd-portfolio",
+  "authors": [
+    "Thoriq Firdaus <tfirdaus@creatiface.com>"
+  ],
+  "description": "a responsive portfolio website built with Bootstrap",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "portfolio",
+    "responsive",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.2.0",
+    "ionicons-less": "~1.4.1",
+    "html5shiv": "~3.7.2",
+    "jasny-bootstrap": "~3.1.3"
+  }
+}

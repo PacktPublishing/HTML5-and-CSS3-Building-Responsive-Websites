@@ -1,0 +1,174 @@
+.startup-header {
+	background: url('../img/banner.jpg') no-repeat center center fixed;
+	background-size: cover;
+	.startup-hero {
+		padding-top: rem-calc(150px);
+		padding-bottom: rem-calc(150px);
+		.hero-lead {
+			color: darken(#fff, 30%);
+		}
+	}
+	.startup-name {
+		max-width: 60px;
+		a {
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			background: url('../img/logo.svg') no-repeat center left;
+			background-size: auto 90%;
+			opacity: 0.9;
+		}
+	}
+	.startup-top-bar {
+		padding-top: rem-calc(30);
+		ul {
+			$color: fade-out(#fff, 0.8);
+			$color-hover: fade-out(#fff, 0.5);
+			background-color: transparent;
+			.button {
+				@include transition(border 300ms ease-out, background-color 300ms ease-out);
+			}
+			.log-in {
+				padding-right: 0;
+				> .button {
+					background-color: transparent;
+					border: 2px solid $color;
+					color: #fff;
+					&:hover {
+						background-color: transparent;
+						border: 2px solid $color-hover;
+						color: #fff;
+					}
+				}
+			}
+			.sign-up {
+				> .button {
+					background-color: $color;
+					border: 2px solid transparent;
+					color: #fff;
+					&:hover {
+						background-color: $color-hover;
+						border: 2px solid transparent;
+					}
+				}
+			}
+		}
+		a {
+			@include transition (color 300ms ease-out);
+		}
+	}
+	.startup-top-bar,
+	.startup-hero {
+		background-color: fade-out(#000, 0.5);
+	}
+}
+.startup-features {
+	padding: rem-calc(90 0);
+	figure {
+		margin: 0;
+	}
+	.columns {
+		margin-bottom: rem-calc(15);
+	}
+}
+
+.startup-testimonial {
+	padding: rem-calc(90 0);
+	text-align: center;
+	background-color: darken(#fff, 2%);
+	blockquote {
+		font-size: rem-calc(24);
+	}
+	figure {
+		margin-top: 0;
+		margin-bottom: 0;
+		.avatar {
+			border-radius: 50%;
+			display: inline-block;
+			width: 64px;
+		}
+	}
+	figcaption {
+		margin-top: rem-calc(20);
+		color: darken(#fff, 30%);;
+	}
+}
+.startup-pricing {
+	$basic-bg      : #85c1d0;
+	$team-bg       : #9489a3;
+	$enterprise-bg : #d04040;
+
+	padding-top: rem-calc(120);
+	padding-bottom: rem-calc(120);
+	.pricing-table {
+		background-color: darken(#fff, 2%);
+	}
+	.pricing-basic {
+		.title {
+			background-color: $basic-bg;
+		}
+		.price {
+			background-color: lighten($basic-bg, 25%);
+		}
+	}
+	.pricing-team {
+		.title {
+			background-color: $team-bg;
+		}
+		.price {
+			background-color: lighten($team-bg, 25%);
+		}
+	}
+	.pricing-enterprise {
+		.title {
+			background-color: $enterprise-bg;
+		}
+		.price {
+			background-color: lighten($enterprise-bg, 25%);
+		}
+	}
+}
+
+// The Footer
+.startup-footer {
+	$footer-bg: darken(#fff, 5%);
+
+	text-align: center;
+	padding: rem-calc(60 0 30);
+	background-color: $footer-bg;
+	border-top: 1px solid darken($footer-bg, 15%);
+
+	.footer-nav {
+		ul {
+			margin-left: 0;
+		}
+		li {
+			display: inline-block;
+			margin: rem-calc(0 10);
+		}
+		a {
+			color: darken($footer-bg, 30%);
+			@include transition (color 300ms ease-out);
+			&:hover {
+				color: darken($footer-bg, 70%);
+			}
+		}
+	}
+	.social-nav {
+		li a:before {
+			margin-right: rem-calc(5);
+			position: relative;
+			top: 2px;
+		}
+		.foundicon-facebook:hover {
+			color: #3b5998;
+		}
+		.foundicon-twitter:hover {
+			color: #55acee;
+		}
+	}
+	.footer-copyright {
+		margin-top: rem-calc(30);
+		color: darken($footer-bg, 15%);
+	}
+}
