@@ -1,0 +1,49 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" media="screen and (max-device-width:320px)" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript">
+            //$(document).ready(function(){
+            var foo = window.screen.width
+            if (foo < 600){
+                $.getScript("http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js");
+  //var sc = document.createElement('script');
+  //sc.src = 'http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js';
+  //sc.type = 'text/javascript';
+  //sc.async = true;
+  //if(typeof sc.async !== 'undefined') {
+    // sc.async = false;
+  //}  
+  //document.getElementsByTagName('head')[0].appendChild(sc);
+            }
+            //});
+
+        </script>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+		<h1>There be buttons</h1>
+	</div>
+            <div data-role="content">
+                <div data-role="controlgroup" data-type="horizontal">
+        <button data-icon="delete" data-iconpos="notext" data-theme="a">HTML5 Button</button>
+        
+        <input type="button" value="Input Button" data-icon="check" data-iconpos="notext" data-theme="b"/>
+        
+        <input type="submit" value="Submit Button" data-icon="plus" data-iconpos="notext" data-theme="c"/>
+        
+        <a href="#" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e">Link button</a>
+    </div>
+            </div>  
+        </div>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+<head>
+<style>
+@media screen and ( max-width: 800px ) {
+.small-menu { display: inline; }
+.large-menu { display: none; }
+}
+@media screen and ( min-width: 801px ) and ( max-width: 1024px ) {
+.small-menu { display: none; }.
+.large-menu { 
+display:inline; 
+width: 100%; 
+}
+.large-menu ul { list-style-type: none; }
+.large-menu ul li { display: inline; }
+.content: { width: 100%; }
+}
+@media screen and ( min-width: 1025px ) {
+.small-menu { display: none; }
+.large-menu { 
+display: inline; 
+float: left; 
+width: 20%;
+}
+.content{
+float: right;
+width: 80%;
+}
+}
+</style>
+</head>
+<body>
+<div class=”small-menu”>
+<form>
+<select name="URL" onchange="window.location.href=this.form.URL.options[this.form.URL.selectedIndex].value”>
+<option value="blog.html">My Blog</option>
+<option value="home.html">My Home Page</option>
+<option value="tutorials.html">My Tutorials</option>
+</select>
+<form>
+</div>
+
+<div class=”large-menu”>
+<ul>
+<li><a href=”blog.html”>My Blog</a></li>
+<li><a href=”home.html”>My Home Page</a></li>
+<li><a href=”tutorials.html”>My Tutorials</a></li>
+</ul>
+</div>
+
+<div class=”content”>
+<p>Loremipsum dolor sitamet, consecteturadipiscingelit. Aeneanneceros magna, non fringilla lacus. Uthendrerit, nisl id sagittislaoreet, turpisarcuposuereipsum, non dictumtortor nisi sedlorem. Nam sitamethendrerit lacus. In rutrum, maurislaoreetbibendumsodales, augueauguefermentumnunc, at feugiatnequeturpisutpurus. Praesentmollisurnanisl.Aliquamposuere lacus at elittemporsedaliquamauguevenenatis.Nullampretiumnislsedloremconsequatutsollicitudinfelisgravida.Cras vitae vestibulum est. Nullampulvinarpellentesquevelitneccondimentum. </p>
+</div>
+</body>
+</html>
+
+
+

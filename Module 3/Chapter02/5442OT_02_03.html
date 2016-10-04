@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript">
+function drawShape(){
+  // get the canvas using the DOM
+  var canvas = document.getElementById('mycanvas');
+ 
+  // 
+  if (canvas.getContext){
+ 
+    // use getContext to use the canvas for drawing
+    var ctx = canvas.getContext('2d');
+ 
+    ctx.shadowOffsetX = -1;   
+    ctx.shadowOffsetY = -1;   
+    ctx.shadowBlur = 2;   
+    ctx.shadowColor = "#333";   
+    
+  
+    ctx.textAlign = "left";
+    ctx.font = "33px Times New Roman"; 
+    ctx.strokeStyle = "Black";
+    ctx.strokeText("This is the Canvas", 3, 50);  
+    ctx.strokeStyle = "#ccc";
+    ctx.strokeText("This is the Canvas",  6, 52); 
+    ctx.fillStyle = "#666";   
+    ctx.fillText("This is the Canvas", 5, 51); 
+    ctx.linewidth = 2; 
+
+  
+  } else {
+    alert('You need Safari or Firefox 1.5+ to see this demo.');
+  }
+}
+</script>
+</head>
+<body onload="drawShape();">
+   <canvas id="mycanvas" style="width:30%;background-color: grey;"></canvas>
+</body>
+</html>

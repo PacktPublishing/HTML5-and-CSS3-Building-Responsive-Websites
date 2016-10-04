@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Changing image sizes with media query</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            @media screen and (max-width:960px){
+                .wrap{padding:0 5%;width:90%;}
+                .wrap img{
+                    width:90%;
+                    height:auto;
+                    padding:5%;
+                }
+                .wrap p{width:90%;padding:5%;text-align:justify;}
+            }
+            @media screen and (min-width:961px) and (max-width:1280px){
+                .wrap{padding:0 5%;width:90%;}
+                .wrap img{
+                    width:50%;
+                    height:auto;
+                    max-width:600px;
+                    float:right;
+                }
+                .wrap p{width:50%;text-align:justify;float:left;}
+            }
+           
+            @media screen and (min-width:1281px){
+                .wrap{padding:0 5%;width:90%;}
+                .wrap img{
+                    width:40%;
+                    height:auto;
+                    max-width:500px;
+                    float:left;
+                }
+                .wrap p{width:60%;text-align:justify;float:right;}
+            }
+        </style>
+    </head>
+    <body> 
+        <h1>Changing image sizes with media query</h1>
+        <div class="wrap"><img src="images/robot.png"><p>Pellentesque eleifend facilisis odio ac ullamcorper. Nullam ut enim ut massa tincidunt luctus. Ut nulla libero, eleifend vel ultrices at, volutpat quis quam. In eleifend velit bibendum sapien consectetur fermentum iaculis eu eros. Nullam eget dui eros, et semper justo. Nunc ut condimentum felis. Donec elementum euismod nisl vitae commodo. Morbi ac orci purus. Phasellus vehicula vulputate metus a fermentum. Fusce justo massa, pretium sed sollicitudin sit amet, mattis vitae ligula. Praesent venenatis viverra leo et convallis. Curabitur at mauris nec sapien malesuada sollicitudin. Nunc scelerisque dignissim augue aliquam interdum. Donec id aliquam augue. Proin commodo volutpat velit, vitae vulputate ipsum luctus vel. Aenean tincidunt iaculis tellus, sed egestas eros tincidunt et.</p></div>
+ 
+          </body>
+</html>

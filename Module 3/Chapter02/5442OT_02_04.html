@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        canvas{width:500px;height:500px;}
+    </style>
+<script type="text/javascript">
+function drawShape(){
+  // get the canvas using the DOM
+  var canvas = document.getElementById('mycanvas');
+ canvas.width=250;
+ canvas.height=250;
+  // 
+  if (canvas.getContext){
+ 
+    // use getContext to use the canvas for drawing
+    var ctx = canvas.getContext('2d');
+ 
+ 
+    ctx.rotate(Math.PI/4,0,0);
+
+    
+    ctx.shadowOffsetX = -2;   
+    ctx.shadowOffsetY = -1;   
+    ctx.shadowBlur = 2;   
+    ctx.shadowColor = "#000000";   
+    
+
+    
+    ctx.textAlign = "center";
+    ctx.font = "30px Times New Roman";  
+    ctx.fillStyle = "#666";   
+    ctx.fillText("This is the Canvas", 140, 1); 
+    ctx.strokeStyle = "#888";
+    ctx.strokeText("This is the Canvas", 140, 1); 
+    
+    ctx.linewidth = 1; 
+
+
+ 
+  } else {
+    alert('You need Safari or Firefox 1.5+ to see this demo.');
+  }
+}
+</script>
+</head>
+<body onload="drawShape();">
+   <canvas id="mycanvas" ></canvas>
+</body>
+</html>

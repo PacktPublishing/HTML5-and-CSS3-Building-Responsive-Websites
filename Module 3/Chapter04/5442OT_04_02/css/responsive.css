@@ -1,0 +1,19 @@
+/* 
+    Document   : responsive.css
+    Created on : Dec 29, 2012, 10:38:27 PM
+    Author     : benjaminlagrone
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.container{width:960px}
+@media screen and (max-width:600px){
+    div[class*='span-']{width:90%;}
+.container{width:100%}
+}
+@media screen and (min-width:601px) and (max-width:1024px){
+    div[class*='span-']{width:42%;}   
+    div[class*='span-'].wide{width:90%;}   
+.container{width:100%}
+}
+div[class*='span-']{display:block;
+}

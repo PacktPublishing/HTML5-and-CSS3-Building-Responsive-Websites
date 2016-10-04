@@ -1,0 +1,75 @@
+<head>
+<style>
+body{margin:30px;}
+input[type="submit"] {
+color: white;
+padding: 5px;
+width: 68px;
+height: 28px;
+border-radius: 5px;
+border: 1px;
+font-weight: bold;
+border: 1px groove #7A7A7A;
+cursor: pointer;
+}
+input[type="submit"] {
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2JmZDI1NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzhlYjkyYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzcyYWEwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5ZWNiMmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, #0F97FF 0%, #97D2FF 8%,#0076D1 62%, #0076D1 63%, #005494 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0F97FF), color-stop(8%,#97D2FF)color-stop(50%,#0076D1), color-stop(51%,#0076D1), color-stop(100%,#005494));
+background: -webkit-linear-gradient(top, #0F97FF 0%,#97D2FF 8%,#0076D1 62%,#0076D1 63%,#005494 100%);
+background: -o-linear-gradient(top, #0F97FF 0%,#97D2FF 8%,#0076D1 62%,#0076D1 63%,#005494 100%);
+background: -ms-linear-gradient(top, #0F97FF 0%,#97D2FF 8%,#0076D1 62%,#0076D1 63%,#005494 100%);
+background: linear-gradient(to bottom, #0F97FF 0%,#97D2FF 8%,#0076D1 62%,#0076D1 63%,#005494 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f97ff', endColorstr='#005494',GradientType=0 );
+}
+input[type="submit"]:hover {
+border: 2px groove #7A7A7A;
+}
+input[type="submit"].partial-fade {
+border-top: 1px solid #CFF !important;
+border-right: 1px solid #CCF !important;
+border-left: 1px solid #CCF !important;
+border-bottom: 1px solid #6CF !important;
+-webkit-box-shadow: 0 08px 0px #0F97FF, inset 0 0 20px rgba(37, 141, 220, 1);
+-moz-box-shadow: 0 0 8px 0px #0F97FF, inset 0 0 20px rgba(37,141,220,1);
+box-shadow: 0 0 8px 0px #0F97FF, inset 0 0 20px rgba(37, 141, 220, 1);
+}
+</style>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+<h1>My Form</h1>
+<form id="myForm">
+<ul>
+<li>
+<input type = "text" placeholder = "Enter your First Name"/>
+</li>
+<li>
+<input type = "text" placeholder ="Enter your Last Name"/>
+</li>
+</ul>
+<input type="submit" name="Save" value="Submit">  
+</form>
+
+<script>
+//Submit Glow
+$('input[type="submit"]').click(function() {
+$(this).addClass('partial-fade');
+    $(this).animate({
+        opacity: 0.1
+    }, 8).animate({
+        opacity: 0.9
+    }, 226).animate({
+        opacity: .5
+    }, 86);
+    setTimeout(function () {
+        $('input[type="submit"]').removeClass('partial-fade');
+    }, 366).animate({
+        opacity: 1
+    }, 86);
+});
+</script>
+
+</body>

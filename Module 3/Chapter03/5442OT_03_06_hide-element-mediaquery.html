@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hiding an element with media query</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            .foo{background-color:#ccc;width:300px;}
+            .bar{background-color:blue;width:600px;color:white;}
+            @media screen and (max-width:960px){
+                img {position:absolute;left:5000px;}
+                .bar{display:none}
+            }
+            @media screen and (min-width:961px){             
+                .foo{float:left;margin-left:-5000px;}
+            }
+        </style>
+    </head>
+    <body> 
+        <h1>Hiding an element with media query</h1>
+        <img src="images/robot.png">
+        <div class="foo">Pellentesque eleifend facilisis odio ac ullamcorper. Nullam ut enim ut massa tincidunt luctus. Ut nulla libero, eleifend vel ultrices at, volutpat quis quam. In eleifend velit bibendum sapien consectetur fermentum iaculis eu eros. Nullam eget dui eros, et semper justo. Nunc ut condimentum felis. Donec elementum euismod nisl vitae commodo. Morbi ac orci purus. Phasellus vehicula vulputate metus a fermentum. Fusce justo massa, pretium sed sollicitudin sit amet, mattis vitae ligula. Praesent venenatis viverra leo et convallis. Curabitur at mauris nec sapien malesuada sollicitudin. Nunc scelerisque dignissim augue aliquam interdum. Donec id aliquam augue. Proin commodo volutpat velit, vitae vulputate ipsum luctus vel. Aenean tincidunt iaculis tellus, sed egestas eros tincidunt et.</div>
+ 
+        <div class="bar">Pellentesque eleifend facilisis odio ac ullamcorper. Nullam ut enim ut massa tincidunt luctus. Ut nulla libero, eleifend vel ultrices at, volutpat quis quam. In eleifend velit bibendum sapien consectetur fermentum iaculis eu eros. Nullam eget dui eros, et semper justo. Nunc ut condimentum felis. Donec elementum euismod nisl vitae commodo. Morbi ac orci purus. Phasellus vehicula vulputate metus a fermentum. Fusce justo massa, pretium sed sollicitudin sit amet, mattis vitae ligula. Praesent venenatis viverra leo et convallis. Curabitur at mauris nec sapien malesuada sollicitudin. Nunc scelerisque dignissim augue aliquam interdum. Donec id aliquam augue. Proin commodo volutpat velit, vitae vulputate ipsum luctus vel. Aenean tincidunt iaculis tellus, sed egestas eros tincidunt et.</div>
+    </body>
+</html>

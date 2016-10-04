@@ -1,0 +1,20 @@
+/* 
+    Document   : responsive
+    Created on : Dec 26, 2012, 11:24:27 PM
+    Author     : benjaminlagrone
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+@media screen and (max-width:420px){
+    .break-column{min-width:360px;}
+}
+@media screen and (max-width:600px) and (min-width:421px){
+    .grid_2.break-column,.grid_3.break-column,.grid_5.break-column{width:48%;}
+}
+@media screen and (max-width:1024px) and (min-width:601px){
+    .break-column{width:30% !important}
+}
+
+

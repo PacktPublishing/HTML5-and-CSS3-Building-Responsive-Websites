@@ -1,0 +1,32 @@
+/* 
+    Document   : responsive
+    Created on : Jan 3, 2013, 12:03:52 AM
+    Author     : benjaminlagrone
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+img.resp{width:100%; height:auto;}
+
+
+@media screen and (max-width:600px){
+    div[class*='g']{width:96%;}
+    div[class*='ml']{margin-left:0;}
+}
+@media screen and (min-width:601px) and (max-width:1024px){
+    div.last~div[class*='g']{width:100%;}
+    div[class*='g']{width:48%;}   
+    div[class*='g'].wide{width:90%;}   
+    div[class*='ml']{margin-left:0;}
+}
+@media screen and (min-width:1280px){
+div.last~div[class*='g']{position:absolute;right:0;top:0;width:14%;max-width:226px;}
+div.last~div[class*='g']>div[class*='g']{display:block;float:none;width:100%;}
+div.last~div[class*='g']>div[class*='ml']{margin-left:0;}
+}
+div[class*='g']{
+transition: width 0.1s;
+-moz-transition: width 0.1s; /* Firefox 4 */
+-webkit-transition: width 0.1s; /* Safari and Chrome */
+-o-transition: width 0.1s; /* Opera */
+}

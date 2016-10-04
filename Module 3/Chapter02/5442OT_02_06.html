@@ -1,0 +1,49 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            h1{
+                text-shadow: 
+                    0px 0px 0px #888,
+                    -1px -1px 0px #777, 
+                    -2px -2px 1px #666,
+                    -3px -3px 1px #555,
+                    -4px -4px 2px #444,
+                    -5px -5px 3px #333,
+                    -6px -6px 5px #000,
+                    1px 1px 5px #ccc, 
+                    2px 2px 5px #ccc,
+                    3px 3px 5px #ccc,
+                    4px 4px 5px #ccc,
+                    5px 5px 5px #ccc,
+                    6px 6px 5px #ccc;
+                    
+        
+                filter: dropshadow(color=#ffff00, offx=1, offy=1);
+ 
+        color:#f0f0f0;
+            }
+            p.shadow{
+                text-shadow: 1px 1px 2px #333333;
+        filter: dropshadow(color=#333333, offx=2, offy=2);
+            }
+            p.shadow a{
+                text-shadow: 0px 0px 1px blue, 1px 1px 2px #333333;
+        filter: dropshadow(color=#ffff00, offx=1, offy=1);
+            }
+            p.shadow a:hover{
+                text-shadow: 0px 0px 8px #ffff00, 2px 2px 3px #666;
+        filter: dropshadow(color=#ffff00, offx=1, offy=1);
+            }
+        </style>
+    </head>
+    <body><h1> I Think Therefore I am</h1>
+        <p class="shadow">Morbi <a href="#">venenatis</a> aliquam lorem, id blandit justo rhoncus at. Curabitur porttitor lectus hendrerit est malesuada sit amet facilisis enim interdum. Sed eget suscipit dui. Vestibulum et nulla leo, a feugiat velit. Integer tortor massa, blandit non pulvinar a, <a href="#">scelerisque</a> in lacus. Mauris et odio orci, a dignissim est. Donec in felis elit. Nullam pretium mi in dolor ullamcorper vulputate.</p>
+    </body>
+</html>

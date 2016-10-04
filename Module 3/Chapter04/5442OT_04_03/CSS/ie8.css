@@ -1,0 +1,3 @@
+div.last~div[class*='g']{position:absolute;right:0;top:0;width:14%;max-width:226px;}
+div.last~div[class*='g']>div[class*='g']{display:block;float:none;width:100%;}
+div.last~div[class*='g']>div[class*='ml']{margin-left:0;}

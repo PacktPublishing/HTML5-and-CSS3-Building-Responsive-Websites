@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Media Query to your CSS</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            @media print{
+                body{color:#000000;}
+                h1{font-weight:bold;font-size:120%;}
+                img{float:right;width:20%;border:2px solid #ccc;padding:1%;margin:1%;}
+                p{width:80%;float:left;font-size:60%;}
+            }
+            @media (orientation: portrait){
+                body{color:#000000;}
+                h1{font-weight:bold;font-size:120%;}
+                img{float:right;width:20%;border:2px solid #ccc;padding:1%;margin:1%;}
+                p{width:80%;float:left;font-size:60%;}
+            }
+            @media (orientation: landscape){
+                body{color:#000000;}
+                h1{font-weight:bold;font-size:120%;}
+                img{float:right;width:20%;border:2px solid #ccc;padding:1%;margin:1%;}
+                p{width:80%;float:left;font-size:60%;}
+            }
+            @media (height:500px){
+                body{color:#000000;}
+                h1{font-weight:bold;font-size:120%;}
+                img{float:right;width:20%;border:2px solid #ccc;padding:1%;margin:1%;}
+                p{width:80%;float:left;font-size:60%;}
+            }
+            @media (device-width:500px){
+                body{color:#000000;}
+                h1{font-weight:bold;font-size:120%;}
+                img{float:right;width:20%;border:2px solid #ccc;padding:1%;margin:1%;}
+                p{width:80%;float:left;font-size:60%;}
+            }
+            @media (device-height:500px){
+                body{color:#000000;}
+                h1{font-weight:bold;font-size:120%;}
+                img{float:right;width:20%;border:2px solid #ccc;padding:1%;margin:1%;}
+                p{width:80%;float:left;font-size:60%;}
+            }
+            @media screen and (device-aspect-ratio: 16/9) {
+                body{color:#000000;}
+                h1{font-weight:bold;font-size:120%;}
+                img{float:right;width:20%;border:2px solid #ccc;padding:1%;margin:1%;}
+                p{width:80%;float:left;font-size:60%;}
+            }
+            @media tv {
+                body{color:blue;}
+                h1{font-weight:bold;font-size:140%;}
+                img{float:left;width:20%;border:2px solid #ccc;padding:2%;margin:2%;}
+                p{width:62%;float:right;font-size:110%;padding:2%}
+            }
+            @media screen and (max-width:960px){
+                body{color:#000000;}
+                h1{font-weight:bold;font-size:120%;}
+                img{float:right;width:20%;border:2px solid #ccc;padding:1%;margin:1%;}
+                p{width:80%;float:left;font-size:60%;}
+            }
+            @media screen and (min-width:961px) and (max-width:1280px){
+                body{color:#000000;}
+                h1{font-weight:bold;font-size:120%;}
+                img{float:right;width:20%;border:2px solid #ccc;padding:1%;margin:1%;}
+                p{width:80%;float:left;font-size:60%;}
+            }
+            @media screen and (min-width:1281px){
+                body{color:#000000;}
+                h1{font-weight:bold;font-size:120%;}
+                img{float:right;width:20%;border:2px solid #ccc;padding:1%;margin:1%;}
+                p{width:80%;float:left;font-size:60%;}
+            }
+
+        </style>
+    </head>
+    <body> 
+        <h1>Add Media Query to your CSS</h1>
+          <div class="wrap"><img src="images/robot.png"/>Pellentesque eleifend facilisis odio ac ullamcorper. Nullam ut enim ut massa tincidunt luctus. Ut nulla libero, eleifend vel ultrices at, volutpat quis quam. In eleifend velit bibendum sapien consectetur fermentum iaculis eu eros. Nullam eget dui eros, et semper justo. Nunc ut condimentum felis. Donec elementum euismod nisl vitae commodo. Morbi ac orci purus. Phasellus vehicula vulputate metus a fermentum. Fusce justo massa, pretium sed sollicitudin sit amet, mattis vitae ligula. Praesent venenatis viverra leo et convallis. Curabitur at mauris nec sapien malesuada sollicitudin. Nunc scelerisque dignissim augue aliquam interdum. Donec id aliquam augue. Proin commodo volutpat velit, vitae vulputate ipsum luctus vel. Aenean tincidunt iaculis tellus, sed egestas eros tincidunt et.</div>
+    </body>
+</html>

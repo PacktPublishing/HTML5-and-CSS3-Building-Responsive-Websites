@@ -1,0 +1,196 @@
+<head>
+<script>
+
+</script>
+
+<style>
+body{margin:0;padding:0;}
+.img-search {width: 100%} 
+.search {position:absolute;}
+nav .small-menu img{width:9%;height:auto;float:left;padding:0 2%;}
+nav .small-menu select {margin: 3%; width: 80%;}
+.main-img {width: 100%; height: auto;}
+.top-menu {height: 33px; background-color: #ccc;}
+.top-menu nav li {display: inline-block;}
+.logo img {height: 87px; float: left;}
+.large-menu ul {margin: 0 5px;}
+.large-menu li {display: inline;}
+
+.flip-tab {width: 100%; height: 54px; text-align: center;}
+.teasers {max-width: 1280px;}
+.teaser {float:left;}
+.contact-us {float:left;}
+.cities {float:left;}
+
+footer {width:100%}
+.footer-wrap {width: 100%; max-width: 1280px; margin: 0 10%; display: inline-block;}
+.footer-third {display:inline-block;}
+
+
+@media screen and (max-width: 600px) {
+ nav .small-menu {display: inline}
+ nav .large-menu {display: none}
+ .search {margin-top: 87px; left: 22%;}
+ .teaser {width: 100%}
+ .contact-us {width: 100%;}
+ .cities {width: 100%}
+ .footer-third {width: 100%}
+}
+@media screen and (min-width: 601px) and (max-width: 1280px){
+     .search {margin-top: 144px; left: 40%}
+     .contact-us {width: 40%;}
+     .cities {width: 60%}
+}
+@media screen and (min-width: 601px) {
+ nav .small-menu{display: none}
+ nav .large-menu{display: inline}
+ .teaser {width: 32%; min-width: 144px;}
+ .footer-third {float: left; width: 33%; min-width: 144px;}
+}
+@media screen and (max-width: 1280px) {
+ header, .content {width: 100%;}
+}
+@media screen and (min-width: 1281px) {
+ header {float: left; width: 60%;}
+ .content {float: right; width: 40%;}
+ .search {margin-top: 144px; left:22%;}
+}
+@media screen and (min-width: 1281px) and (max-width: 1366px){
+ .contact-us {width: 100%}
+ .cities {width:100%}
+ }
+@media screen and (min-width: 1367px) {
+.contact-us {width: 40%}
+.cities {width: 60%}
+}
+
+</style>
+</head>
+
+<body>
+<header>
+<nav>
+
+<div class="menu small-menu">
+ <img src="images/robot-low.png">
+ <form>
+  <select name="URL" onchange="window.location.href=this.form.URL.options[this.form.URL.selectedIndex].value">
+   <option value="blog.html">Blog</option>
+   <option value="home.html">Home</option>
+</select>
+</form>
+</div>
+
+<div class="menu large-menu">
+ <div class="top-menu">
+  <nav>
+   <ul>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="account.html">My Account</a></li>
+   </ul>
+  </nav>
+ </div>
+ <div class="bottom-menu">
+  <nav>
+  <a href="#" class="logo">
+   <img src="images/robot-low.png">
+  </a>
+  <ul>
+  <li><a href="#">blog</a></li>
+  <li><a href="#">page</a></li>
+  <li><a href="#">tutorials</a></li>
+  </ul>
+  </nav>
+ </div>
+</div>
+
+</nav>
+
+<div class="img-search">
+ <div class="search">
+ <form>
+  <input type="text" placeholder="Find a Robot">
+  <input type="Submit" value="search" class="search-input">
+  </form>
+  </div>
+  <img class="main-img" src="images/robot-wide.png">
+ </div>
+
+  <div class="flip-tab"><h2>Look down here</h2></div>
+
+            <div class="teasers">
+                <div class="teaser teaser1">
+                    <h3>First Law of Robotics</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non felis ut metus vestibulum condimentum ut eu eros. Nam id ipsum nibh. Praesent sit amet velit id libero suscipit fermentum. Nunc et justo erat, at mollis mauris. Aenean venenatis, nulla nec mollis laoreet, metus elit laoreet sapien, a venenatis nisl purus vitae felis. Praesent a quam massa, mattis accumsan neque. Sed ultrices erat nec mi mattis lacinia fringilla mi aliquet. Nulla at justo quis dui bibendum malesuada eu in leo. Sed sed neque neque, non ornare mauris. Pellentesque et nisl augue, semper tempor eros. Sed at metus non quam elementum malesuada sit amet nec nulla.
+                    </p>
+                </div>
+                <div class="teaser teaser2">
+                    <h3>Second Law of Robotics</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non felis ut metus vestibulum condimentum ut eu eros. Nam id ipsum nibh. Praesent sit amet velit id libero suscipit fermentum. Nunc et justo erat, at mollis mauris. Aenean venenatis, nulla nec mollis laoreet, metus elit laoreet sapien, a venenatis nisl purus vitae felis. Praesent a quam massa, mattis accumsan neque. Sed ultrices erat nec mi mattis lacinia fringilla mi aliquet. Nulla at justo quis dui bibendum malesuada eu in leo. Sed sed neque neque, non ornare mauris. Pellentesque et nisl augue, semper tempor eros. Sed at metus non quam elementum malesuada sit amet nec nulla.
+                    </p>
+                </div>
+                <div class="teaser teaser3">
+                    <h3>Third Law of Robotics</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non felis ut metus vestibulum condimentum ut eu eros. Nam id ipsum nibh. Praesent sit amet velit id libero suscipit fermentum. Nunc et justo erat, at mollis mauris. Aenean venenatis, nulla nec mollis laoreet, metus elit laoreet sapien, a venenatis nisl purus vitae felis. Praesent a quam massa, mattis accumsan neque. Sed ultrices erat nec mi mattis lacinia fringilla mi aliquet. Nulla at justo quis dui bibendum malesuada eu in leo. Sed sed neque neque, non ornare mauris. Pellentesque et nisl augue, semper tempor eros. Sed at metus non quam elementum malesuada sit amet nec nulla.
+                    </p>
+                </div>
+            </div>
+
+</header>
+
+<div class="content" role="main">
+
+ <div class="contact-us">
+  <div class="form-wrap">
+  <legend>Find a Robot</legend>
+  <form>
+   <input type="text" placeholder="Robot Search">
+   <input value="Search" class="search-input" type="submit">
+   </form>
+  </div>
+  <h4>Search or Like Us Locally</h4>
+  <ul class="local-like">
+  <li><a href="/search/SanFranciso">San Francisco</a><a href="/like/SanFrancisco">Like</a></li>
+  <li><a href="/search/LosAngeles">Los Angeles</a><a href="/like/LosAngeles">Like</a></li>
+  <li><a href="/search/Austin">Austin</a><a href="/like/Austin">Like</a></li>
+  <li><a href="/search/Houston">Houston</a><a href="/like/Houston">Like</a></li>
+  </ul>
+ </div>
+  
+  <div class="cities">
+  <p>
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non felis ut metus vestibulum condimentum ut eu eros. Nam id ipsum nibh. Praesent sit amet velit id libero suscipit fermentum. Nunc et justo erat, at mollis mauris. Aenean venenatis, nulla nec mollis laoreet, metus elit laoreet sapien, a venenatis nisl purus vitae felis. Praesent a quam massa, mattis accumsan neque. Sed ultrices erat nec mi mattis lacinia fringilla mi aliquet. Nulla at justo quis dui bibendum malesuada eu in leo. Sed sed neque neque, non ornare mauris. Pellentesque et nisl augue, semper tempor eros. Sed at metus non quam elementum malesuada sit amet nec nulla.
+  </p>
+  </div>
+</div>
+
+
+        <footer>
+            <div class="footer-wrap">
+                <div class="footer-1 footer-third">
+                    <ul>
+                        <li><span class=""><a href="#">FaceBook</a></span></li>
+                        <li><span class=""><a href="#">Google +</a></span></li>
+                        <li><span class=""><a href="#">Twitter</a></span></li>
+                    </ul>
+                </div>
+                <div class="footer-2 footer-third">
+                    <ul>
+                        <li><span class=""><a href="#">Link1</a></span></li>
+                        <li><span class=""><a href="#">Privacy Policy</a></span></li>
+                        <li><span class=""><a href="#">Terms of Use</a></span></li>
+                    </ul>
+                </div>
+                <div class="footer-3 footer-third">
+                    <ul>
+                        <li><span class=""><a href="#">Link1</a></span></li>
+                        <li><span class=""><a href="#">Link2</a></span></li>
+                        <li><span class=""><a href="#">Link3</a></span></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+</body>

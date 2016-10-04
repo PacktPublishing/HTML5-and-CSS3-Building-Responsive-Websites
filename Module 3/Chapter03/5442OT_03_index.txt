@@ -1,0 +1,9 @@
+Chapters and corresponding HTML files
+
+Responsive layout with min and max width - responsive-layout-min-max-width.html
+Control your layout with relative padding - relative-padding.html
+Add a media query to your css - add-media-query.html
+Creating responsive a width layout with your media query - resp-width-layout-media-query.html
+Changing image sizes with media query - change-imagesize-mediaquery.html
+Hiding an element with media query - hide-element-mediaquery.html
+Make a smoothly trasitioning responsive layout - make-smoothly-transitioning-resp-layout.html
