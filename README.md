@@ -1,8 +1,3 @@
-## $5 Tech Unlocked 2021!
-[Buy and download this Course for only $5 on PacktPub.com](https://www.packtpub.com/product/html5-and-css3-building-responsive-websites/9781787124813)
------
-*The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
-
 # HTML5 and CSS3 Building Responsive Websites
 This is the code repository for HTML5 and CSS3: Building Responsive Websites, published by Packt. It contains all the necessary code files.
 
